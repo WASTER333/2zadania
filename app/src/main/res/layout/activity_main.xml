@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł"/>
+
+
+    <EditText
+        android:id="@+id/editGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gatunek"/>
+
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Opis"/>
+
+
+    <SeekBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film"/>
+        <RadioButton
+            android:id="@+id/radioBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Książka"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"/>
+
+   ]
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
